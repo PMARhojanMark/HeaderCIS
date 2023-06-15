@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome icon (links) -->
+    <link rel="stylesheet" href="fontawesome.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="fontawesome.js"></script>
+    <!-- Styling css file -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive header</title>
+  </head>
+  <body>
+    <script>
+      const toggle = () => {
+        document.getElementById("nav").classList.toggle("navactive");
+      };
+    </script>
+    <header>
+      <div class="brand">
+        <img src="media/logo.png" alt="logo" width="60" height="66">
+        <h1 class="font-effect-outline">CIS</h1>
+      </div>
+      <span class="fas fa-bars" id="menuIcon" onclick="toggle()"></span>
+      <div class="navbar" id="nav">
+        <div class="searchBox">
+          <input type="text" placeholder="Search here..." />
+          <span class="fas fa-search icon" id="searchIcon"></span>
+        </div>
+        <ul>
+          <li>
+            <span class="fas fa-home icon" id="headIcon"></span>
+            <a href="#"> Home </a>
+          </li>
+          <li>
+            <span class="fas fa-question-circle icon" id="headIcon"></span>
+            <a href="#"> Help </a>
+          </li>
+          <li>
+            <span class="fas fa-sign-out icon" id="headIcon"></span>
+            <a href="#"> Logout </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+  </body>
+</html>
